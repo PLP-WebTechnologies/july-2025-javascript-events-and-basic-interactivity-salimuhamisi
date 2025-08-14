@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Interactive Web Page</h1>
+        <button id="themeToggle">🌙 Toggle Dark Mode</button>
+    </header>
+
+    <!-- Counter -->
+    <section>
+        <h2>A Counter => Click to increment count</h2>
+        <button id="counterBtn">Counter Button</button>
+        <p>Count: <span id="countValue">0</span></p>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <h2>FAQ</h2>
+        <div class="faq-item">
+            <h3>What is JavaScript? <span class="toggle">+</span></h3>
+            <p class="answer">JavaScript is a programming language that makes web pages interactive.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What is DOM? <span class="toggle">+</span></h3>
+            <p class="answer">DOM stands for Document Object Model, representing the page's structure.</p>
+        </div>
+    </section>
+
+    <!-- Tab Interface -->
+    <section>
+        <h2>Tabs</h2>
+        <div class="tabs">
+            <button class="tab" data-tab="tab1">Tab 1</button>
+            <button class="tab" data-tab="tab2">Tab 2</button>
+            <button class="tab" data-tab="tab3">Tab 3</button>
+        </div>
+        <div id="tab1" class="tab-content active">This is content for Tab 1.</div>
+        <div id="tab2" class="tab-content">This is content for Tab 2.</div>
+        <div id="tab3" class="tab-content">This is content for Tab 3.</div>
+    </section>
+
+    <!-- Form -->
+    <section>
+        <h2> Sign Up Form</h2>
+        <form id="signupForm">
+            <label>Name: <input type="text" id="name" required></label>
+            <small class="error" id="nameError"></small>
+            
+            <label>Email: <input type="email" id="email" required></label>
+            <small class="error" id="emailError"></small>
+            
+            <label>Password: <input type="password" id="password" required></label>
+            <small class="error" id="passwordError"></small>
+            
+            <button type="submit">Submit</button>
+            <p id="successMessage"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
